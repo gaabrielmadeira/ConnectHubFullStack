@@ -13,8 +13,6 @@ Esta aplicação permite a gestão completa de clientes e contatos associados. A
 
 ## Como Rodar a API
 
-**É preciso criar localmente um banco de dados para se conectar a API.**
-
 Siga estes passos para configurar e executar a API localmente:
 
 1. **Clone o repositório**
@@ -22,7 +20,7 @@ Siga estes passos para configurar e executar a API localmente:
 3. **instale as dependecias rodando o comando npm install em seu terminal.**
 4. **Crie um arquivo na raiz chamado .env para guardar as variaveis de ambiente.**
 5. **Copie o arquivo .env.example para o novo arquivo chamado .env.**
-6. **Abra o arquivo .env e ajuste as variáveis conforme necessário.**
+6. **Abra o arquivo .env e ajuste as variáveis conforme necessário para se conectar ao seu banco de dados.**
 7. ** Rode o comando npm run typeorm migration:generate src/migrations/initialMigration -- -d src/data-source no seu terminal para gerar a migração das tabelas.**
 8. ** Rode o comando npm run typeorm migration:run -- -d src/data-source no seu terminal para rodar a migração das tabelas.**
 9. **Rode o Comando para Desenvolvimento npm run dev no seu terminal**.
