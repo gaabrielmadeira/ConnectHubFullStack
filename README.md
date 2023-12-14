@@ -13,7 +13,7 @@ Esta aplicação permite a gestão completa de clientes e contatos associados. A
 
 ## Como Rodar a API
 
-**É preciso criar localmente um banco de dados para se conectar a API.
+**É preciso criar localmente um banco de dados para se conectar a API.**
 
 Siga estes passos para configurar e executar a API localmente:
 
