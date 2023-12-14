@@ -1,6 +1,6 @@
 # ConectHub - CRUD de Clientes e Contatos
 
-Bem-vindo à aplicação ContactHub, responsável por fornecer operações CRUD completas para clientes e contatos associados a esses clientes.
+🚀Bem-vindo à aplicação ContactHub, responsável por fornecer operações CRUD completas para clientes e contatos associados a esses clientes.💻✨
 
 ## Deploy da aplicação:
 https://projeto-full-stack-m6-front-end.vercel.app/
