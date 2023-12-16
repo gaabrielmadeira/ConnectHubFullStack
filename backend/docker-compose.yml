@@ -3,7 +3,7 @@ version: "2.23.3"
 services:
   database:
     image: postgres
-    container_name: database_connecthub_api
+    container_name: database_connecthub
     restart: always
     ports:
       - 5432:5432
