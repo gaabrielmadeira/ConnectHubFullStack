@@ -1,4 +1,4 @@
-# ConectHub - CRUD de Clientes e Contatos
+# ConnectHub - CRUD de Clientes e Contatos
 
 🚀Bem-vindo à aplicação ContactHub, responsável por fornecer operações CRUD completas para clientes e contatos associados a esses clientes.💻✨
 
