@@ -8,7 +8,7 @@
     "typeorm": "typeorm-ts-node-commonjs",
     "typeorm:generate": "typeorm-ts-node-commonjs migration:generate -d src/data-source",
     "typeorm:run": "typeorm-ts-node-commonjs migration:run -d src/data-source",
-    "start": "npm run typeorm migration:generate src/migrations/initialMigration -- -d src/data-source && npm run typeorm migration:run -- -d src/data-source && node server.js"
+    "start": "npm run typeorm migration:generate src/migrations/initialMigration -- -d src/data-source && npm run typeorm migration:run -- -d src/data-source && node server.ts"
   },
   "keywords": [],
   "author": "Gabriel Madeira",
