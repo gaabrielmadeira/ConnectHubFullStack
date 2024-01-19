@@ -14,7 +14,7 @@ Esta aplicação permite a gestão completa de clientes e contatos associados. A
 - **U**pdate: Atualizar informações de clientes ou contatos existentes.
 - **D**elete: Excluir clientes ou contatos.
 
-## Como Rodar a API
+## Como Rodar a API localmente ( se preferir )
 
 Siga estes passos para configurar e executar a API localmente:
 
@@ -30,6 +30,7 @@ Siga estes passos para configurar e executar a API localmente:
 10. **Se tudo estiver configurado corretamente, você verá a seguinte mensagem no seu terminal:**<br>
    Server is running<br>
    Server is running on port (número)<br>
+11. Será necessário ajustar a variavel baseUrl no service do Front End para url local.
 
 ## Consulte aqui a documentação:
 - [Documentação](https://api-doc-nu.vercel.app/)
