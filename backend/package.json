@@ -9,7 +9,7 @@
     "typeorm:generate": "typeorm-ts-node-commonjs migration:generate -d src/data-source",
     "typeorm:run": "typeorm-ts-node-commonjs migration:run -d src/data-source",
     "build": "tsc",
-    "start": "yarn typeorm migration:generate src/migrations/initialMigration -- -d src/data-source && yarn typeorm migration:run -- -d src/data-source && node server.ts"
+    "start": "yarn typeorm migration:create && yarn typeorm migration:generate src/migrations/initialMigration -- -d src/data-source && yarn typeorm migration:run -- -d src/data-source && node server.ts"
   },
   "keywords": [],
   "author": "Gabriel Madeira",
