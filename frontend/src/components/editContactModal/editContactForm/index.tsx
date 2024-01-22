@@ -27,8 +27,7 @@ export const EditContactFormModal = () => {
 
   const submit = async (formData: TEditContactForm) => {
     const nonEmptyFields: TEditContactForm = Object.fromEntries(
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      Object.entries(formData).filter(([key, value]) => value != undefined && value != "")
+      Object.entries(formData).filter(([_key, value]) => value != undefined && value != "")
     )
 
     const telephones = [formData.telephone1, formData.telephone2].filter(tel => tel !== "");
