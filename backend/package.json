@@ -1,5 +1,5 @@
 {
-  "name": "ConnectHub",
+  "name": "connecthub",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,12 @@
     "typeorm": "typeorm-ts-node-commonjs",
     "typeorm:generate": "typeorm-ts-node-commonjs migration:generate -d src/data-source",
     "typeorm:run": "typeorm-ts-node-commonjs migration:run -d src/data-source",
-    "build": "tsup src",
-    "start": "node dist/server.js"
+    "start": "npm run typeorm migration:generate src/migrations/InittialMigration -- -d src/data-source && npm run typeorm migration:run -- -d src/data-source && npm run dev"
   },
   "keywords": [],
   "author": "Gabriel Madeira",
   "license": "ISC",
-  "devDependencies":{}
+  "devDependencies":{},
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",
