@@ -14,23 +14,29 @@ Esta aplicação permite a gestão completa de clientes e contatos associados. A
 - **U**pdate: Atualizar informações de clientes ou contatos existentes.
 - **D**elete: Excluir clientes ou contatos.
 
-## Como Rodar a API localmente ( se preferir )
+## Como Rodar a API através do Docker
 
 Siga estes passos para configurar e executar a API localmente:
 
-1. **Clone o repositório**
-2. **Acesse a pasta backend.**
-3. **instale as dependecias rodando o comando npm install em seu terminal.**
-4. **Crie um arquivo na raiz chamado .env para guardar as variaveis de ambiente.**
-5. **Copie o arquivo .env.example para o novo arquivo chamado .env.**
-6. **Abra o arquivo .env e ajuste as variáveis conforme necessário para se conectar ao seu banco de dados.**
-7. ** Rode o comando npm run typeorm migration:generate src/migrations/initialMigration -- -d src/data-source no seu terminal para gerar a migração das tabelas.**
-8. ** Rode o comando npm run typeorm migration:run -- -d src/data-source no seu terminal para rodar a migração das tabelas.**
-9. **Rode o Comando para Desenvolvimento npm run dev no seu terminal**.
-10. **Se tudo estiver configurado corretamente, você verá a seguinte mensagem no seu terminal:**<br>
-   Server is running<br>
-   Server is running on port (número)<br>
-11. Será necessário ajustar a variavel baseUrl no service do Front End para url local.
+1 - Configure os arquivos .env na raiz do projeto e na pasta backend da seguinte maneira:
+ - Na raiz do projeto crie um arquivo .env e copie o que esta no arquivo .env.example para dentro deste arquivo, faça os mesmo passos para o arquivo dentro da pasta backend
+ - Preencha as variáveis de ambiente, sugestão:
+ .env da raiz:
+     ```
+      PGPORT=5432
+      PORT=3000
+
+      POSTGRES_USER=postgres
+      POSTGRES_DB=connecthub
+      POSTGRES_PASSWORD=1234
+
+.env do backend
+   ```
+      DATABASE_URL=postgres://postgres:1234@db:5432/connecthub
+      SECRET_KEY=abdcedahdahskjd
+      EXPIRES_IN=1hr
+  ```
+2 - Execute o comando docker-compose up para subir o container.
 
 ## Consulte aqui a documentação:
 - [Documentação](https://api-doc-nu.vercel.app/)
