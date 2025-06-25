@@ -6,7 +6,7 @@
 https://projeto-full-stack-m6-front-end.vercel.app/
 
 ## Observação:
-Somente a API e o banco de dados estão dockerizados (Back End), basta abrir o link do deploy, e executar os containers da API e do Banco de dados conform as instruções abaixo.
+Somente a API e o banco de dados estão dockerizados (Back End), basta abrir o link do deploy, e executar os containers da API e do Banco de dados conforme as instruções abaixo.
 
 ## Visão Geral
 
