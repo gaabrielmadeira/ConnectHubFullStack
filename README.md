@@ -39,7 +39,7 @@ Siga estes passos para configurar e executar a API localmente:
       SECRET_KEY=abdcedahdahskjd
       EXPIRES_IN=1hr
   ```
-2 - Execute o comando "docker compose up" para subir o container.
+2 - Execute o comando "docker compose up" na raiz do projeto para subir o container.
 
 ## Consulte aqui a documentação:
 - [Documentação](https://api-doc-nu.vercel.app/)
